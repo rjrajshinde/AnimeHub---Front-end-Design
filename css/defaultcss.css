@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+}
+/* this css is applied to whole pages tags or classes*/
+body{
+    font-family: Quicksand;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+    /* for no bullet types */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    /* getting rid of underlines under a tag */
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+}
+.btn:hover{
+    transform: scale(0.95);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding:0 40px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.text-center{
+    text-align: center;
+}
+
+.card{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* background colors */
+.bg-primary,
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff ;
+}
+
+.bg-secondary,
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: #fff ;
+}
+
+.bg-dark,
+.btn-dark{
+    background-color: var(--dark-color);
+    color: #fff ;
+}
+
+.bg-light,
+.btn-light{
+    background-color: var(--light-color);
+    color: #fff ;
+}
+
+
+/* text sizes */
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+}
+.xl{
+    font-size: 4rem;
+}

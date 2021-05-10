@@ -1,0 +1,159 @@
+
+/* Navbar css */
+.navbar{
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(90deg,#047aed, #66c2ff, #150070);
+    color: white;
+    height: 70px;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    margin: 0 5px;
+    padding: 15px;
+}
+.navbar a:hover{
+    border-bottom: 2px   white solid;
+}
+
+
+/* showcase */
+.showcase{
+    height: 400px;
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(90deg,#047aed, #66c2ff, #150070);
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+    color: white;
+}
+.showcase p{
+    margin-top: 20px 0;
+    color: white;
+}
+.showcase .showcase-text{
+    margin-top: 100px;
+    animation: fadeIn linear 1.5s;
+}
+/* .showcase .grid{
+    display: grid;
+    grid-template-columns: 900px;
+    align-items: center;
+    height: 100%;
+} */
+.showcase .btn-outline{
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px white solid;
+} 
+.showcase::before,
+.showcase::after{
+    content: "";
+    position: absolute;
+    height: 110px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: white;
+    transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+}
+
+
+
+/* stats */
+.stats{
+    margin-top: 100px;
+}
+.stats .stats-heading{
+    animation:scaleIn 1s ease-in,fadeIn 1s;
+}
+.stats .grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stats .grid h3{
+    font-size: 35px;
+}
+.stats .grid p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* animeflix */
+.animeflix .grid{
+    grid-template-columns: 4fr 3fr;
+}
+.animeflix .btn{
+    border: 0;
+}
+.animeflix .img{
+    height: 100%;
+    width: 100%;
+}
+ 
+
+
+/* anime cards */
+.animes{
+    margin-bottom: 140px;
+}
+.animes .flex{
+    flex-wrap: wrap;
+}
+.animes .logo{
+    height: 80px;
+    width: 200px;
+}
+.animes .card{
+    transition: transform 0.2s ease-in;
+    margin: 20px;
+    padding: 40px;
+}
+.animes .card h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.animes .card:hover{
+    transform: translateY(-15px);
+}
+
+
+
+/* footer */
+.footer .grid{
+    overflow: visible;
+}
+.footer .footer-form{
+    position: relative;
+    bottom: 60px;
+    height: 350px;
+    width: 80%;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+}
+.footer .form-control{
+    margin: 30px 0;
+}
+.footer .form-control input{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}   
+.footer .form-control input:focus{ 
+    outline:  none;
+}
+.footer .form-control .btn-footer-form{ 
+    border: 0;
+}

@@ -1,0 +1,36 @@
+/* tablets and under */
+@media(max-width: 768px) {
+    .stats .grid-3,
+    .animeflix .grid,
+    .footer .grid{
+        grid-template-columns: 1fr;
+    }
+    .footer .footer-form{
+        justify-self: center;
+        margin-top: 100px;
+    }
+    .showcase .showcase-text{
+        text-align: center;
+    }
+}
+
+
+/* mobiles */
+@media(max-width: 500px){
+    .navbar{
+        height: 110px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .showcase .showcase-text{
+        margin-top: 40px;
+    }
+    .showcase h1{
+        font-size: 30px;
+    }
+}
