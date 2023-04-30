@@ -13,7 +13,7 @@ Clone the project
 
 Go to the project directory
 
-open home.html
+- Open home.html
 
 ## Demo
 
